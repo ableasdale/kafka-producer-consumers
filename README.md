@@ -1,10 +1,22 @@
-# kafka-producers
+# Kafka Producers
+
 Sample Kafka Producers
 
-## Building and Running
+## Startup
+
+```
+docker-compose up
+```
+
+## Building
 
 ```
 ./gradlew shadowJar
+```
+
+## Running
+
+```
 java -jar build/libs/kafka-producer-application-standalone-0.0.1.jar configuration/dev.properties input.txt
 ```
 
